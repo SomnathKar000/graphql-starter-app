@@ -2,7 +2,6 @@ const typeDefs = `#graphql
     type Author {
         id: ID!
         name: String!
-
     }
 
     type Book {
@@ -16,9 +15,7 @@ const typeDefs = `#graphql
         authors: [Author]
     }
 
-    type Mutation {
-
-    }
+   
 `;
 
 export { typeDefs };
