@@ -1,12 +1,24 @@
 const typeDefs = `#graphql
- type Book {
-    title: String
-    author: String
-  }
+    type Author {
+        id: ID!
+        name: String!
 
-  type Query {
-    books:[Book]
-  }
+    }
+
+    type Book {
+        id: ID!
+        title: String!
+        publishedYear: Int
+    }
+
+    type Query {
+        books: [Book]
+        authors: [Author]
+    }
+
+    type Mutation {
+
+    }
 `;
 
 export { typeDefs };
