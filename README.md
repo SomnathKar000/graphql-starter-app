@@ -1,21 +1,25 @@
-// Structure
+### Structure
 
-books {
-id,
-title,
-publishedYear,
-author
+```javascript
+book {
+    id,
+    title,
+    publishedYear,
+    author
 }
+```
 
+```javascript
 author {
-id,
-name,
-books
+    id,
+    name,
+    books
 }
+```
 
-// Data
+### Data
 
-List of books
-List of Authors
-List of books with author details
-List of author with book details
+- List of books
+- List of Authors
+- List of books with author details
+- List of author with book details
