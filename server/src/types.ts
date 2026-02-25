@@ -1,13 +1,13 @@
 export type Book = {
-  id: Number;
-  name: String;
-  publishedYear?: Number;
-  authorId: Number;
+  id: number;
+  title: string;
+  publishedYear?: number;
+  authorId: number;
 };
 
 export type Author = {
-  id: Number;
-  name: String;
+  id: number;
+  name: string;
 };
 
 export type Context = {};

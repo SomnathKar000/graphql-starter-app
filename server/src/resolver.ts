@@ -28,6 +28,27 @@ const resolvers = {
       return books.filter((book) => book.authorId === parent.id);
     },
   },
+  Mutation: {
+    addBook: (
+      parent: any,
+      args: Book,
+      context: Context,
+      info: GraphQLResolveInfo
+    ) => {
+      const id = (books.length = 1);
+      const publishedYear = args.publishedYear || new Date().getFullYear();
+
+      const book: Book = {
+        id,
+        title: args.title,
+        authorId: args.authorId,
+        publishedYear: publishedYear,
+      };
+
+      books.push(book);
+      return book;
+    },
+  },
 };
 
 export { resolvers };
